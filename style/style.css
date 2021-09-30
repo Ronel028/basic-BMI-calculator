@@ -27,7 +27,7 @@ header {
 
 header .card {
   width: 40%;
-  height: 50%;
+  height: 50vh;
   background-color: #334756;
   -webkit-box-shadow: 2px 5px 21px black;
           box-shadow: 2px 5px 21px black;
@@ -77,6 +77,12 @@ header .card .title h1 {
   margin-left: 3px;
 }
 
+@media screen and (max-width: 356px) {
+  header .card .title h1 {
+    font-size: 1rem;
+  }
+}
+
 header .card .main-input-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +98,7 @@ header .card .main-input-container {
 
 header .card .main-input-container .input1-container, header .card .main-input-container .input2-container {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 header .card .main-input-container .input1-container h3, header .card .main-input-container .input2-container h3 {
@@ -100,6 +107,12 @@ header .card .main-input-container .input1-container h3, header .card .main-inpu
   color: white;
   letter-spacing: 0.1875rem;
   margin-bottom: 4px;
+}
+
+@media screen and (max-width: 356px) {
+  header .card .main-input-container .input1-container h3, header .card .main-input-container .input2-container h3 {
+    font-size: 1rem;
+  }
 }
 
 header .card .main-input-container .input1-container input[type="number"], header .card .main-input-container .input2-container input[type="number"] {
@@ -118,6 +131,12 @@ header .card .main-input-container .input1-container input[type="number"], heade
   -webkit-appearance: textfield;
      -moz-appearance: textfield;
           appearance: textfield;
+}
+
+@media screen and (max-width: 356px) {
+  header .card .main-input-container .input1-container input[type="number"], header .card .main-input-container .input2-container input[type="number"] {
+    width: 201px;
+  }
 }
 
 header .card .main-input-container .result {

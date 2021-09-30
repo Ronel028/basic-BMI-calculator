@@ -19,7 +19,7 @@ header{
 
     .card{
         width: 40%;
-        height: 50%;
+        height: 50vh;
         background-color: #334756;
         box-shadow: 2px 5px 21px black;
 
@@ -48,6 +48,9 @@ header{
                 font-size: 1.6875rem;
                 font-weight: 700;
                 margin-left: 3px;
+                @media screen and (max-width: 356px){
+                    font-size: 1rem;
+                }
             }
         }
         .main-input-container{
@@ -57,12 +60,17 @@ header{
 
             .input1-container,.input2-container{
                 margin-bottom: 20px;
+                text-align: center;
                 h3{
                     font-size: 1.25rem;
                     font-weight: 600;
                     color: white;
                     letter-spacing: 0.1875rem;
                     margin-bottom: 4px;
+
+                    @media screen and (max-width: 356px){
+                        font-size: 1rem;
+                    }
                 }
                 input[type="number"]{
                     display: block;
@@ -81,6 +89,10 @@ header{
                     border-bottom: 1px solid white;
 
                     appearance: textfield;
+
+                    @media screen and (max-width: 356px){
+                        width: 201px;
+                    }
                 }
             }
             .result{
